@@ -30,15 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let currentTime = counterDisplay.innerText
 
-        // target_li = document.querySelector(`#${currentTime}`) 
-        let target_li = document.getElementById(currentTime)
+        let targetLiElement = document.getElementById(currentTime)
         
     //   if the likesList  contains the CounterDisplayText.innerText  (number) then  increment the  existing like 
-        if (target_li != null){
+        if (targetLiElement != null){
         
-            target_li.value = parseInt(target_li.value) +1
+            targetLiElement.value = parseInt(targetLiElement.value) +1
         
-            target_li.innerText =`${currentTime} has been liked ${target_li.value}  times`
+            targetLiElement.innerText =`${currentTime} has been liked ${targetLiElement.value}  times`
       }
         else{
         
